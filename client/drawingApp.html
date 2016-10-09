@@ -1,0 +1,59 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Canvas</title>
+</head>
+
+<body>
+  {{> wall}}
+</body>
+
+<template name="wall">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Creative Canvas</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+ <input id="color-field" value="#000000" style="display:none;"> <div id="preview" class="swatch" style="background-color:#000000;" ></div>
+          Color Picker<span class="caret"></span></a>
+          {{> colors}}
+        </li>
+          {{> brushes}}
+       <li style="color:#fff;">{{value}}</li>
+        {{> sizes}}
+      </ul>
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="js-export" target="_blank">Export as PNG&nbsp;<span class="glyphicon glyphicon-new-window"  aria-hidden="true"></span><span class="sr-only">Open in a new window</span></a></li>
+            <li role="separator" class="divider"></li>
+            <li style="text-align: center;"><button type="button" class="btn btn-danger js-clear">Clear the canvas</button></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <h1>{{title}}</h1>
+<div class="innerCanvas"> 
+{{> canvas}}
+</div>
+</template>
+
+<template name="canvas">
+  <div id='canvas' class="workspace"></div>
+</template>
+
+
+

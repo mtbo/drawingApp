@@ -1,0 +1,89 @@
+<template name="colors">
+	<ul class="dropdown-menu colorPicker">
+		<li>
+			<form>
+				<div class="swatches js-color">
+						<label id="#000000" class="swatch swatch-clickable" style="background-color:#000000;">
+							<input type="radio" name="color" value="#000000" >
+						</label>
+						<label id="#ff0000" class="swatch swatch-clickable" style="background-color:#ff0000;">
+							<input type="radio" name="color" value="#ff0000" >
+						</label>
+						<label id="#ff8a00" class="swatch swatch-clickable" style="background-color:#ff8a00;">
+							<input type="radio" name="color" value="#ff8a00">
+						</label>
+						<label id="#ff6000" class="swatch swatch-clickable" style="background-color:#ff6000;">
+							<input type="radio" name="color" value="#ff6000">
+						</label>
+						<label id="#f6ff00" class="swatch swatch-clickable" style="background-color:#f6ff00;">
+							<input type="radio" name="color" value="#f6ff00">
+						</label>
+						<label id="#908805" class="swatch swatch-clickable" style="background-color:#908805;">
+							<input type="radio" name="color" value="#908805">
+						</label>
+						<label id="#3d9005" class="swatch swatch-clickable" style="background-color:#3d9005;">
+							<input type="radio" name="color" value="#3d9005">
+						</label>
+						<label id="#6cff00" class="swatch swatch-clickable" style="background-color:#6cff00;">
+							<input type="radio" name="color" value="#6cff00">
+						</label>
+						<label id="#00fff6" class="swatch swatch-clickable" style="background-color:#00fff6;">
+							<input type="radio" name="color" value="#00fff6">
+						</label>
+						<label id="#056e90" class="swatch swatch-clickable" style="background-color:#056e90;">
+							<input type="radio" name="color" value="#056e90">
+						</label>
+						<label id="#007eff" class="swatch swatch-clickable" style="background-color:#007eff;">
+							<input type="radio" name="color" value="#007eff">
+						</label>
+						<label id="#053090" class="swatch swatch-clickable" style="background-color:#053090;">
+							<input type="radio" name="color" value="#053090">
+						</label>
+						<label id="#1200ff" class="swatch swatch-clickable" style="background-color:#1200ff;">
+							<input type="radio" name="color" value="#1200ff">
+						</label>
+						<label id="#1c0590" class="swatch swatch-clickable" style="background-color:#1c0590;">
+							<input type="radio" name="color" value="#1c0590">
+						</label>
+						<label id="#5a0590" class="swatch swatch-clickable" style="background-color:#5a0590;">
+							<input type="radio" name="color" value="#5a0590">
+						</label>
+						<label id="#7800ff" class="swatch swatch-clickable" style="background-color:#7800ff;">
+							<input type="radio" name="color" value="#7800ff">
+						</label>
+						<label id="#ae00ff" class="swatch swatch-clickable" style="background-color:#ae00ff;">
+							<input type="radio" name="color" value="#ae00ff">
+						</label>
+						<label id="#ff00fd" class="swatch swatch-clickable" style="background-color:#ff00fd;">
+							<input type="radio" name="color" value="#ff00fd">
+						</label>
+						<label id="#ff0084" class="swatch swatch-clickable" style="background-color:#ff0084;">
+							<input type="radio" name="color" value="#ff0084">
+						</label>
+				</div>
+			</form>
+ 		</li>
+	</ul>
+</template>
+
+
+<template name="brushes">
+        <li class="button">
+          <a href="#" class="js-circle" aria-label="Small Circle">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true">Circle</span>
+          </a>
+        </li>
+        <li class="button">
+          <a href="#" class="js-line" aria-label="Small Line">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true">Line</span>
+          </a>
+        </li>
+</template>
+
+<template name="sizes">
+	<li><span class="nav navbar-text">Brush Size:</span></li>
+	  <li class="slider js-size">
+       <input type="range" name="range" min="1" max="100" value="1" title="1" onchange="range.value=value">
+      	<output id="range" value="1">1</output>
+	  </li>
+</template>
