@@ -14,7 +14,7 @@ $ meteor
 
 * Meteor.js
 * MongoDB
-
+* d3.js
 
 ## Authors
 
